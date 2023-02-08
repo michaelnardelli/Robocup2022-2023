@@ -7,8 +7,8 @@
 
 void setup() {
  
-pinMode(motre1, OUTPUT);  // sets digital pin 13 as an output
-pinMode(motre10, INPUT);   // sets digital pin 12 as an input
+pinMode(4, OUTPUT);  // sets digital pin 13 as an output
+pinMode(5, INPUT);   // sets digital pin 12 as an input
 
 }
 
