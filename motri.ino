@@ -1,8 +1,14 @@
 //definizione del numero del pin
+#define motre1 5;
+#define motre10 4;
+#define motre2 3;
+#define motre20 2;
 
 
 void setup() {
  
+pinMode(motre1, OUTPUT);  // sets digital pin 13 as an output
+pinMode(motre10, INPUT);   // sets digital pin 12 as an input
 
 }
 
