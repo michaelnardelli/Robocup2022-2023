@@ -5,7 +5,10 @@ Servo myservo;
 #define Echo 3
 const int sensorPin = A0;
 
-
+const int motore1= 2;
+const int motore2 = 1;
+const int motore1a= 2;
+const int motore2a = 1;
 
   
 
@@ -16,24 +19,28 @@ const int sensorPin = A0;
 long int durata;
 float distanza;
 void setup(){
- myservo.attach(9);  // attacca il servo alla pin 9
+ myservo.attach(3);  // attacca il servo alla pin 9
   pinMode(Echo, INPUT); 
   pinMode(Trig,OUTPUT);
- // Serial.begin(9600);
   Serial.begin(9600);
-  pinMode(6,OUTPUT);
-  //int sensorValue = analogRead(sensorPin);
-  //Serial.println(sensorValue);
+  pinMode(motore1, OUTPUT);
+  pinMode(motore1a, OUTPUT);
+  pinMode(motore2, OUTPUT);
+  pinMode(motore2a, OUTPUT);
   delay(100);
  
 
 }
 void loop(){
-//digitalWrite(Trig,0);
-//delayMicroseconds(10);
-//digitalWrite(Trig,1);
-//delayMicroseconds(10);
-//digitalWrite(Trig,0);
+digitalWrite(Trig,0);
+delayMicroseconds(10);
+digitalWrite(Trig,1);
+delayMicroseconds(10);
+digitalWrite(Trig,0);
+if (distanza<=20){
+  
+
+}
 for (int i = 0; i <= 180; i++) {
     myservo.write(i);  // muovi il servo a un angolo specifico
     delay(15);
