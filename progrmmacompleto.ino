@@ -83,6 +83,10 @@ void loop() {
   {
     evitamuro();
       }
+  if(bianco!=sensorecolorecentale)
+  {
+    
+  }
   
   
   
