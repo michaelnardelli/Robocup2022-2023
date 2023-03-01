@@ -13,7 +13,8 @@ Servo myservo;
 int bianco = 1;
 int nerto=0;
 int verde=3;
-int motori=200;
+int potenzamotorimax=200;
+int potenzamotorimin=200;
 double distanzaL=20;
 int angoloa=90;
 int angoloc=25;
@@ -38,6 +39,12 @@ pinMode(Echosininstra,INPUT);
 pinMode(Echoavanti,INPUT);
 }
 void sollevamtopallina(){
+
+}
+void evitamuro(){
+    
+    AnalogWrite(motoridestra,potenzamotorimax);
+    AnalogWrite(motorisinistra,potenzamotorimin);
 
 }
 double calcoladistanzaavanti(){
@@ -74,7 +81,7 @@ return distanzasinistra;
 void loop() {
   if (distanzaL<=distanzaavanti)
   {
-     
+    evitamuro();
       }
   
   
