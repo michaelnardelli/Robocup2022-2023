@@ -33,9 +33,6 @@ pinMode(Echodestra,INPUT);
 pinMode(Echosininstra,INPUT);
 pinMode(Echoavanti,INPUT);
 }
-int distanzaavanti(){
-
-}
 void sollevamtopallina(){
 
 }
@@ -49,7 +46,7 @@ duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distatanzavnti;
 } 
-double calcoladestra(){
+double calcoladistanzadestra(){
     digitalWrite(Trigdestra, LOW);
 delayMicroseconds(2);
 digitalWrite(Trigdestra, HIGH);
