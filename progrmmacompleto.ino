@@ -26,7 +26,7 @@ void setup() {
 pinMode(sensorecolorecentale, INPUT);
 pinMode(sensorecoloresinistra, INPUT);
 pinMode(sensorecoloredestra, INPUT);
-pinMode(Trigsinistra,OUTPUT);
+pinMode(Trigdestra,OUTPUT);
 pinMode(Trigavanti,OUTPUT);
 pinMode(Trigsinistra,OUTPUT);
 pinMode(Echodestra,INPUT);
@@ -49,12 +49,12 @@ duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distatanzavnti;
 } 
-double calcoladistanzaavanti(){
-    digitalWrite(Trigavanti, LOW);
+double calcoladestra(){
+    digitalWrite(Trigdestra, LOW);
 delayMicroseconds(2);
-digitalWrite(Trigavanti, HIGH);
+digitalWrite(Trigdestra, HIGH);
 delayMicroseconds(10);
-digitalWrite(Echosininstra, LOW);
+digitalWrite(Echodestra, LOW);
 duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distatanzavnti;
@@ -64,7 +64,7 @@ double calcoladistanzasinistra(){
 delayMicroseconds(2);
 digitalWrite(Trigsinistra, HIGH);
 delayMicroseconds(10);
-digitalWrite(Echoavanti, LOW);
+digitalWrite(Echosininstra, LOW);
 duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distatanzasinistra;
