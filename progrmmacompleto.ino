@@ -17,7 +17,11 @@ int motori=200;
 double distanzaL=20;
 int angoloa=90;
 int angoloc=25;
-double distanza=0;
+double distanzaavanti=0;
+double distanzadestra=0;
+double distanzasinistra=0;
+
+
 
 //min pin 1
 //max pin 53
@@ -44,7 +48,7 @@ delayMicroseconds(10);
 digitalWrite(Echoavanti, LOW);
 duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
-return distatanzavnti;
+return distanzaavanti;
 } 
 double calcoladistanzadestra(){
     digitalWrite(Trigdestra, LOW);
@@ -54,7 +58,7 @@ delayMicroseconds(10);
 digitalWrite(Echodestra, LOW);
 duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
-return distatanzavnti;
+return distanzadestra;
 } 
 double calcoladistanzasinistra(){
     digitalWrite(Trigsinistra, LOW);
@@ -64,13 +68,14 @@ delayMicroseconds(10);
 digitalWrite(Echosininstra, LOW);
 duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
-return distatanzasinistra;
+return distanzasinistra;
 } 
+
 void loop() {
-  if ()
+  if (distanzaL<=distanzaavanti)
   {
-    /* code */
-  }
+     
+      }
   
   
   
