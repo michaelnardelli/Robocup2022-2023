@@ -31,7 +31,7 @@ pinMode(Trigavanti,OUTPUT);
 pinMode(Trigsinistra,OUTPUT);
 pinMode(Echodestra,INPUT);
 pinMode(Echosininstra,INPUT);
-pinMode(Echoavanti,INPUT);ù
+pinMode(Echoavanti,INPUT);
 }
 int distanzaavanti(){
 
@@ -48,6 +48,26 @@ digitalWrite(Echoavanti, LOW);
 duration = pulseIn(echoPin, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distatanzavnti;
+} 
+double calcoladistanzaavanti(){
+    digitalWrite(Trigavanti, LOW);
+delayMicroseconds(2);
+digitalWrite(Trigavanti, HIGH);
+delayMicroseconds(10);
+digitalWrite(Echosininstra, LOW);
+duration = pulseIn(echoPin, HIGH);
+cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
+return distatanzavnti;
+} 
+double calcoladistanzasinistra(){
+    digitalWrite(Trigsinistra, LOW);
+delayMicroseconds(2);
+digitalWrite(Trigsinistra, HIGH);
+delayMicroseconds(10);
+digitalWrite(Echoavanti, LOW);
+duration = pulseIn(echoPin, HIGH);
+cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
+return distatanzasinistra;
 } 
 void loop() {
   if ()
