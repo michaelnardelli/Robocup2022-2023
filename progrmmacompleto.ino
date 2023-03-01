@@ -85,7 +85,7 @@ void loop() {
       }
   if(bianco!=sensorecolorecentale)
   {
-    
+    ritor
   }
   
   
