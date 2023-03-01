@@ -1,5 +1,5 @@
-#include <Servo.h>
-Servo myservo;
+
+
 
 #define Trig 4
 #define Echo 3
