@@ -21,6 +21,7 @@ int angoloc=25;
 double distanzaavanti=0;
 double distanzadestra=0;
 double distanzasinistra=0;
+int duration=0;
 
 
 
@@ -53,7 +54,7 @@ delayMicroseconds(2);
 digitalWrite(Trigavanti, HIGH);
 delayMicroseconds(10);
 digitalWrite(Echoavanti, LOW);
-duration = pulseIn(echoPin, HIGH);
+duration = pulseIn(Echoavanti, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distanzaavanti;
 } 
@@ -63,7 +64,7 @@ delayMicroseconds(2);
 digitalWrite(Trigdestra, HIGH);
 delayMicroseconds(10);
 digitalWrite(Echodestra, LOW);
-duration = pulseIn(echoPin, HIGH);
+duration = pulseIn(Echodestra, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distanzadestra;
 } 
@@ -73,19 +74,22 @@ delayMicroseconds(2);
 digitalWrite(Trigsinistra, HIGH);
 delayMicroseconds(10);
 digitalWrite(Echosininstra, LOW);
-duration = pulseIn(echoPin, HIGH);
+duration = pulseIn(Echosininstra, HIGH);
 cm = (duration / 2) / 29.1; // la formula per calcolare la distanza in centimetri
 return distanzasinistra;
 } 
 
 void loop() {
+   calcoladistanzaavanti();
+   calcoladistanzasinistra();
+   calcoladistanzadestra();
   if (distanzaL<=distanzaavanti)
   {
     evitamuro();
       }
   if(bianco!=sensorecolorecentale)
   {
-    ritor
+    
   }
   
   
