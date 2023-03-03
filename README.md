@@ -11,3 +11,4 @@ questo e il git di robocup
  - per farlo serve l'estensione git hub pull request 
 - se tutto coretto vi vine furi questa immagine 
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXmyWwGVESVJ9-ip22SkZPDZRtIfEfpM-mVWUTvOlgg&s
+- e fare sig in
