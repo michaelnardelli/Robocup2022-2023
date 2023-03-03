@@ -6,7 +6,6 @@ Servo myservo;
 #define Echosininstra 2
 #define Trigdestra 6
 #define Echodestra 7
-#define 
 #define sensorecolorecentale 10
 #define sensorecoloresinistra 12
 #define sensorecoloredestra 11
@@ -18,7 +17,7 @@ int potenzamotorimin=200;
 double distanzaL=20;
 int angoloa=90;
 int angoloc=25;
-double distanzaavan<ti=0;
+double distanznti=0;
 double distanzadestra=0;
 double distanzasinistra=0;
 int duration=0;
@@ -44,21 +43,21 @@ pinMode(Echosininstra,INPUT);
 pinMode(Echoavanti,INPUT);
 }
 void presapallina(){
-for (indice<=angoloC; indice++)
-{myservo.write(i);
+for (indice<=angoloC; indice++);
+{myservo.write(indice);
 delay(10);
     }
-
+indice=0;
  }
  
-}
-indice=0;
+
+
 void solevamentopallina(){
-  for (indice<=angoloA; indice++)
-{myservo.write(i);
+  for (indice<=angoloA; indice++);
+{myservo.write(indice);
 delay(10);
     }
-
+indice=0;
  }  
 }
 void evitamuro(){
