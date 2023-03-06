@@ -1,3 +1,4 @@
+#include <arduino.h>
 #include <Servo.h>
 Servo myservo;
 #define Trigavanti 5
