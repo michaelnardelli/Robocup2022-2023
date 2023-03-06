@@ -25,7 +25,7 @@ int angoloA=120;
 int angoloC=90;
 int indice=1;
 
-
+ 
 //min pin 1
 //max pin 53
 
